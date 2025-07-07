@@ -6,7 +6,7 @@ const navigationConfig = ["Главная", "Преимущества", "Кон�
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.root}>
       <div className={styles.content}>
         <LogoFull />
         <nav className={styles.navigation}>

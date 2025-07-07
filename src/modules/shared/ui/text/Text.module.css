@@ -1,3 +1,13 @@
-.root{
-
+.root {
+    color: var(--color);
+    line-height: 150%;
 }
+
+.bold {
+    font-weight: 500;
+}
+
+.thin {
+    font-weight: 300;
+}
+
