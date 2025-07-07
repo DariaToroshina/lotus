@@ -1,14 +1,15 @@
 import clsx from "clsx";
 import styles from "./Text.module.css";
+import React from "react";
 
 type TextProps = {
-  tag?: "span" | "p";
+  tag?: React.ElementType;
   className?: string;
   children: React.ReactNode;
 };
 
 export const Text: React.FC<TextProps> = ({
-  tag: Tag = "span",
+  tag: Tag = "p",
   className = "",
   children,
 }) => {
