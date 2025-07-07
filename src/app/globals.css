@@ -21,4 +21,7 @@ a {
   --Bg-Medium: #7D66D7;
   --Typo-OpacityWhite:rgba(255, 255, 255, 0.80);
   --Typo-Black:#25282A;
+  --Typo-White:#FFF;
+  --Typo-Placeholder:#BBB;
+  --Bg-Primary:#583AE0;
  }
