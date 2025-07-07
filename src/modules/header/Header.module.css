@@ -5,3 +5,13 @@
     grid-template-columns: 1280px;
     justify-content: center;
 }
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    color: var(--Typo-OpacityWhite);
+    font-weight: 500;
+}

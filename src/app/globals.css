@@ -18,5 +18,6 @@ a {
 }
 
 :root {
-  --Bg-Medium: #7D66D7
+  --Bg-Medium: #7D66D7;
+  --Typo-OpacityWhite:rgba(255, 255, 255, 0.80);
  }
