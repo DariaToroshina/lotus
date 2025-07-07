@@ -1,0 +1,7 @@
+.header {
+    background-color: var(--Bg-Medium);
+    padding: 24px 0px;
+    display: grid;
+    grid-template-columns: 1280px;
+    justify-content: center;
+}
