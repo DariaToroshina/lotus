@@ -10,9 +10,9 @@ const Header = () => {
       <div className={styles.content}>
         <LogoFull />
         <nav className={styles.navigation}>
-          {navigationConfig.map((link) => {
+          {navigationConfig.map((link, i) => {
             return (
-              <Link href={""} className={styles.link}>
+              <Link key={i} href={""} className={styles.link}>
                 {link}
               </Link>
             );
