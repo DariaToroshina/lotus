@@ -1,0 +1,14 @@
+.root {
+    color: var(--Typo-White);
+    background-color: var(--Bg-Primary);
+    border: none;
+    border-radius: 30px;
+}
+
+.default {
+    padding: 14px 24px; 
+    font-size: 16px;          
+    min-height: 48px;
+    border: none;
+    border-radius: 12px;
+  }  
