@@ -1,14 +1,25 @@
 .root {
-    color: var(--Typo-White);
-    background-color: var(--Bg-Primary);
-    border: none;
-    border-radius: 30px;
+  color: var(--Typo-White);
+  background-color: var(--Bg-Primary);
+  border: none;
+  border-radius: 30px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .root:hover {
+    background-color: #4d2fd3;
+    transition: background-color 0.3s;
+  }
 }
 
 .default {
-    padding: 14px 24px; 
-    font-size: 16px;          
-    min-height: 48px;
-    border: none;
-    border-radius: 12px;
-  }  
+  font-size: 20px;
+  padding: 14px 24px;
+}
+
+.small {
+  font-size: 16px;
+  padding: 12px 20px;
+}
