@@ -1,37 +1,43 @@
 import clsx from "clsx";
 import styles from "./Button.module.css";
 import React from "react";
-
-type Color = "--Typo-White" | "--Bg-Primary";
-
-type ButtonTag = "button";
+import Link from "next/link";
 
 type Size = "default" | "small";
 
 type ButtonProps = {
-  tag?: ButtonTag;
   className?: string;
   children: React.ReactNode;
   onClick?: () => void;
-  color?: Color;
+  size?: Size;
+  href?: string;
 };
 
 export const Button: React.FC<ButtonProps> = ({
-  tag: Tag = "button",
-  className = "",
+  className,
   children,
-  color = "--Bg-Primary",
+  size = "default",
+  href,
+  onClick,
 }) => {
+  if (href) {
+    return (
+      <Link
+        onClick={onClick}
+        className={clsx(styles.root, styles[size], className)}
+        href={href}
+      >
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <Tag
-      className={clsx(styles.root, className)}
-      style={
-        color
-          ? ({ "--color": `var(${color})` } as React.CSSProperties)
-          : undefined
-      }
+    <button
+      onClick={onClick}
+      className={clsx(styles.root, styles[size], className)}
     >
       {children}
-    </Tag>
+    </button>
   );
 };
