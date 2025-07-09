@@ -6,22 +6,22 @@ const SectionRoutine = () => {
   return (
     <section className={styles.root}>
       <div className={styles.content}>
-        <Text tag={"h1"} className={styles.title}>
+        <Text tag={"h2"} className={styles.title}>
           <Text weight="bold">Избавим от рутины</Text>
         </Text>
         <div className={styles.text}>
-          <Text tag={"h2"} weight="thin" className={styles.subtitle}>
+          <Text tag={"p"} weight="thin">
             <Text tag={"span"}>
               Каждый день сотрудники тратят рабочее время на
               <Text tag={"span"} weight="bold">
                 {" "}
-                однообразные задачи
+                однообразные задачи{" "}
               </Text>
               — проверку писем, перенос данных между программами, заполнение
               таблиц и многое другое
             </Text>
           </Text>
-          <Text tag={"h2"} weight="thin">
+          <Text tag={"p"} weight="thin">
             «
             <Text tag={"span"} weight="bold">
               Lotus {""}
@@ -29,7 +29,7 @@ const SectionRoutine = () => {
             возьмёт на себя повседневные задачи, пока вы занимаетесь
             по-настоящему важными делами»
           </Text>
-          <Text tag={"h2"} weight="thin">
+          <Text tag={"p"} weight="thin">
             Он действует как
             <Text tag="span" weight="bold">
               {" "}
