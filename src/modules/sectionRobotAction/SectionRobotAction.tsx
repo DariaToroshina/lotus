@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SectionRobotAction.module.css";
 import { Text } from "../shared/ui/text/Text";
+import { Button } from "../shared/button/Button";
 
 const SectionRobotAction = () => {
   return (
@@ -30,6 +31,9 @@ const SectionRobotAction = () => {
             <Text weight="bold"> не нужно платить</Text> зарплату
           </Text>
         </Text>
+        <Button tag="button" className={styles.default}>
+          Хочу робота
+        </Button>
       </div>
     </section>
   );
