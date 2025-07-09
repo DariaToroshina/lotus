@@ -1,6 +1,6 @@
 import SectionRobotAction from "@/modules/sectionRobotAction/SectionRobotAction";
 import SectionRoutine from "@/modules/sectionRoutine/SectionRoutine";
-import SectionAdvantages from "@/modules/sectionAdvantages/SectionAdvantages";
+import SectionAdvantages from "@/modules/sectionAdvantages/ui/SectionAdvantages";
 import SectionUseLotus from "@/modules/sectionUseLotus/SectionUseLotus";
 import SectionProcess from "@/modules/sectionProcess/SectionProcess";
 import SectionPrice from "@/modules/sectionPrice/SectionPrice";

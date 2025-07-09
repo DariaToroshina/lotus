@@ -1,8 +1,7 @@
-import Link from "next/link";
-import LogoFull from "../shared/icons/LogoFull";
-import { Text } from "../shared/ui/text/Text";
+import { Text } from "../../shared/ui/text/Text";
 import styles from "./SectionAdvantages.module.css";
 import { Card } from "./Card";
+import { cardsConfig } from "../config/config";
 
 const SectionAdvantages = () => {
   return (
@@ -22,13 +21,18 @@ const SectionAdvantages = () => {
           </Text>
         </Text>
 
-        <Card />
-        <Card />
-        <Card />
-
-        <Card />
-        <Card />
-        <Card />
+        <div className={styles.cards}>
+          {cardsConfig.map((card, i) => {
+            return (
+              <Card
+                icon={card.icon}
+                subtitle={card.subtitle}
+                title={card.title}
+                key={i}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
   );
