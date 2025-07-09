@@ -8,7 +8,7 @@ type SubtitleProps = {
 
 const Subtitle: FC<SubtitleProps> = ({ children }) => {
   return (
-    <Text tag={"h2"} weight="bold" className={styles.root}>
+    <Text size="big" tag={"h2"} weight="bold" className={styles.root}>
       {children}
     </Text>
   );

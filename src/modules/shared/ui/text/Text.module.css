@@ -1,7 +1,18 @@
 .root {
   color: var(--color);
   line-height: 150%;
+}
+
+.default{
   font-size: 24px;
+}
+
+.small{
+  font-size: 16px;
+}
+
+.big {
+  font-size: 40px;
 }
 
 .bold {

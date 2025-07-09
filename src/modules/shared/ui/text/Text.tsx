@@ -1,30 +1,7 @@
 import clsx from "clsx";
 import styles from "./Text.module.css";
 import React from "react";
-
-type Color =
-  | "--Typo-Black"
-  | "--Typo-White"
-  | "--Typo-OpacityWhite"
-  | "--Typo-Placeholder"
-  | "--Bg-Primary";
-
-type TextTag =
-  | "p"
-  | "span"
-  | "strong"
-  | "em"
-  | "b"
-  | "i"
-  | "u"
-  | "h1"
-  | "h2"
-  | "h3"
-  | "h4"
-  | "h5"
-  | "h6";
-
-type Weight = "bold" | "thin";
+import { Color, Size, TextTag, Weight } from "./types";
 
 type TextProps = {
   tag?: TextTag;
@@ -32,6 +9,7 @@ type TextProps = {
   children: React.ReactNode;
   color?: Color;
   weight?: Weight;
+  size?: Size;
 };
 
 export const Text: React.FC<TextProps> = ({
@@ -40,10 +18,16 @@ export const Text: React.FC<TextProps> = ({
   children,
   color = "--Typo-Black",
   weight,
+  size = "default",
 }) => {
   return (
     <Tag
-      className={clsx(styles.root, weight && styles[weight], className)}
+      className={clsx(
+        styles.root,
+        weight && styles[weight],
+        size && styles[size],
+        className
+      )}
       style={
         color
           ? ({ "--color": `var(${color})` } as React.CSSProperties)
