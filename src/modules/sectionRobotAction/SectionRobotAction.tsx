@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SectionRobotAction.module.css";
 import { Text } from "../shared/ui/text/Text";
-import { Button } from "../shared/button/Button";
+import { Button } from "../shared/ui/button/Button";
 
 const SectionRobotAction = () => {
   return (

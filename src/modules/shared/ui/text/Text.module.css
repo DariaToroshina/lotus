@@ -1,13 +1,13 @@
 .root {
-    color: var(--color);
-    line-height: 150%;
+  color: var(--color);
+  line-height: 150%;
+  font-size: 24px;
 }
 
 .bold {
-    font-weight: 500;
+  font-weight: var(--Text-Bold);
 }
 
 .thin {
-    font-weight: 300;
+  font-weight: var(--Text-Thin);
 }
-
