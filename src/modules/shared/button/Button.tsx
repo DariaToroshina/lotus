@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import styles from "./Button.module.css";
-import React from "react";
+import React, { FC } from "react";
 import Link from "next/link";
 
 type Size = "default" | "small";
@@ -13,7 +13,7 @@ type ButtonProps = {
   href?: string;
 };
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   className,
   children,
   size = "default",
