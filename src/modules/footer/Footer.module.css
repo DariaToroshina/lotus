@@ -1,0 +1,25 @@
+.root {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Bg-Medium);
+    padding: 24px 0px;
+}
+
+.content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 150px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    color: var(--Typo-OpacityWhite);
+    font-weight: 500;
+}

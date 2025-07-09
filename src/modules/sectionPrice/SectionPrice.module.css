@@ -1,6 +1,6 @@
 .root {
-    background: url("/bgs/robotSectionActionBg.png") center center/cover no-repeat;
-    padding: 100px 0px;
+    background: url("/bgs/sectionPrice.png") center center/cover no-repeat;
+    padding: 72px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .content {
-    max-width: 787px; 
+    max-width: 1280px; 
 }
 
 .title {

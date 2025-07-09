@@ -1,5 +1,5 @@
 .root {
-    background: url("/bgs/robotSectionActionBg.png") center center/cover no-repeat;
+    background: #fff;
     padding: 100px 0px;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .content {
-    max-width: 787px; 
+    max-width: 1022px; 
 }
 
 .title {
