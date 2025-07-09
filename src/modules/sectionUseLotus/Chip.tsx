@@ -1,5 +1,5 @@
 import styles from "./Chip.module.css";
-import { Text } from "../../shared/ui/text/Text";
+import { Text } from "../shared/ui/text/Text";
 import { FC, ReactNode } from "react";
 
 type ChipProps = {
