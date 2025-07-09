@@ -32,6 +32,12 @@
   margin-top: 48px;
 }
 
+.buttonWrapper {
+  padding: 12px;
+  border: 2px solid var(--Bg-Primary);
+  border-radius: 40px;
+}
+
 .button {
   margin-top: 64px;
 }
