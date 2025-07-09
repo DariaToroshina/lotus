@@ -1,4 +1,3 @@
-
 html,
 body {
   max-width: 100vw;
@@ -17,21 +16,21 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 
+button {
+  font-family: var(--font-geometria);
+}
 
 :root {
-  --Bg-Medium: #7D66D7;
-  --Typo-OpacityWhite:rgba(255, 255, 255, 0.80);
-  --Typo-Black:#25282A;
-  --Typo-White:#FFF;
-  --Typo-Placeholder:#BBB;
-  --Bg-Primary:#583AE0;
-  --Text-Thin:300;
- }
-
-
-
- 
+  --Bg-Medium: #7d66d7;
+  --Typo-OpacityWhite: rgba(255, 255, 255, 0.8);
+  --Typo-Black: #25282a;
+  --Typo-White: #fff;
+  --Typo-Placeholder: #bbb;
+  --Bg-Primary: #583ae0;
+  --Text-Thin: 300;
+}
