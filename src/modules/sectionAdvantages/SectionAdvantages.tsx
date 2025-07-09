@@ -2,6 +2,7 @@ import Link from "next/link";
 import LogoFull from "../shared/icons/LogoFull";
 import { Text } from "../shared/ui/text/Text";
 import styles from "./SectionAdvantages.module.css";
+import { Card } from "./Card";
 
 const SectionAdvantages = () => {
   return (
@@ -20,6 +21,8 @@ const SectionAdvantages = () => {
             чем с людьми
           </Text>
         </Text>
+
+        <Card />
       </div>
     </section>
   );

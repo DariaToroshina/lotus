@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "./SectionRoutine.module.css";
 import { Text } from "../shared/ui/text/Text";
+import Subtitle from "../shared/ui/subtitle/Subtitle";
 
 const SectionRoutine = () => {
   return (
     <section className={styles.root}>
+      <Subtitle>Избавим от рутины</Subtitle>
       <div className={styles.content}>
-        <Text tag={"h2"} className={styles.title}>
-          <Text weight="bold">Избавим от рутины</Text>
-        </Text>
         <div className={styles.text}>
           <Text tag={"p"} weight="thin">
             <Text tag={"span"}>

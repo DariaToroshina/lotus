@@ -11,10 +11,6 @@
   max-width: 1280px;
 }
 
-.title {
-  font-size: 40px;
-  text-align: center;
-}
 
 .platform {
   font-weight: var(--Text-Thin);

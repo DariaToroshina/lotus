@@ -8,12 +8,17 @@ const SectionRobotAction = () => {
     <section className={styles.root}>
       <div className={styles.content}>
         <Text tag={"h1"} className={styles.title}>
-          <Text weight="bold">Lotus RPA –</Text>
-          <Text className={styles.platform}>
+          <Text size="big" weight="bold">
+            Lotus RPA –
+          </Text>
+          <Text size="big" className={styles.platform}>
             {" "}
             платформа для создания цифровых
           </Text>
-          <Text weight="bold"> сотрудников-роботов</Text>
+          <Text size="big" weight="bold">
+            {" "}
+            сотрудников-роботов
+          </Text>
         </Text>
         <Text tag={"h2"} weight="thin" className={styles.subtitle}>
           <Text tag={"span"}>
