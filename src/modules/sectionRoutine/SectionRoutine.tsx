@@ -20,14 +20,16 @@ const SectionRoutine = () => {
               таблиц и многое другое
             </Text>
           </Text>
-          <Text tag={"p"} weight="thin">
-            «
-            <Text tag={"span"} weight="bold">
-              Lotus {""}
+          <div className={styles.quote}>
+            <Text tag={"p"} weight="thin">
+              «
+              <Text tag={"span"} weight="bold">
+                Lotus {""}
+              </Text>
+              возьмёт на себя повседневные задачи, пока вы занимаетесь
+              по-настоящему важными делами»
             </Text>
-            возьмёт на себя повседневные задачи, пока вы занимаетесь
-            по-настоящему важными делами»
-          </Text>
+          </div>
           <Text tag={"p"} weight="thin">
             Он действует как
             <Text tag="span" weight="bold">
