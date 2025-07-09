@@ -31,9 +31,7 @@ const SectionRobotAction = () => {
             <Text weight="bold"> не нужно платить</Text> зарплату
           </Text>
         </Text>
-        <Button tag="button" className={styles.default}>
-          Хочу робота
-        </Button>
+        <Button>Хочу робота</Button>
       </div>
     </section>
   );
