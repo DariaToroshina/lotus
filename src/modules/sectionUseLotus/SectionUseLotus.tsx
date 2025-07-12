@@ -39,18 +39,9 @@ const SectionUseLotus = () => {
         </div>
       </div>
       <div className={styles.chips}>
-        <div className={styles.row}>
-          {chipsConfig.slice(0, 8).map((chip, i) => (
-            <Chip text={chip} key={`chip-top-${i}`} />
-          ))}
-        </div>
-        {chipsConfig.length > 8 && (
-          <div className={styles.row}>
-            {chipsConfig.slice(8).map((chip, i) => (
-              <Chip text={chip} key={`chip-bottom-${i}`} />
-            ))}
-          </div>
-        )}
+        {chipsConfig.map((chip, i) => (
+          <Chip text={chip} key={i} />
+        ))}
       </div>
       <Subtitle>Есть ли сферы, где RPA неприменим?</Subtitle>
       <div className={styles.content}>
