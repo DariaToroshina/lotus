@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-type Props = {
+type CheckIconProps = {
   className?: string;
 };
 
-export const CheckIcon: FC<Props> = ({ className }) => {
+export const CheckIcon: FC<CheckIconProps> = ({ className }) => {
   return (
     <svg
       className={className}

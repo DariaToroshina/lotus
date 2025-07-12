@@ -9,7 +9,9 @@ type ChipProps = {
 export const Chip: FC<ChipProps> = ({ text }) => {
   return (
     <div className={styles.root}>
-      <Text size="small">{text}</Text>
+      <Text weight="bold" size="small">
+        {text}
+      </Text>
     </div>
   );
 };

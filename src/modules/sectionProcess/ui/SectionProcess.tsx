@@ -4,6 +4,7 @@ import { Text } from "../../shared/ui/text/Text";
 import Subtitle from "../../shared/ui/subtitle/Subtitle";
 import { cardsConfig } from "../config/config";
 import { Card } from "../../shared/ui/card/Card";
+import { CardList } from "./CardList";
 
 const SectionProcess = () => {
   return (
@@ -27,18 +28,34 @@ const SectionProcess = () => {
           </div>
         </div>
         <div className={styles.cards}>
-          {cardsConfig.map((card, i) => {
-            return (
-              <Card
-                key={i}
-                step={card.step}
-                title={card.title}
-                description={card.description}
-                checklist={card.checklist}
-                variant={i < 3 ? "default" : "wide"}
-              />
-            );
-          })}
+          <div className={styles.cardsLayout}>
+            {cardsConfig.top.map((card, i) => {
+              const cardNum = i + 1;
+              return (
+                <Card
+                  key={i}
+                  num={<div className={styles.circle}>{cardNum}</div>}
+                  title={card.title}
+                  description={card.description}
+                >
+                  {card.checklist && <CardList list={card.checklist} />}
+                </Card>
+              );
+            })}
+          </div>
+
+          <div className={styles.cardsLayout}>
+            {cardsConfig.bottom.map((card, i) => {
+              return (
+                <Card
+                  key={i}
+                  num={<div className={styles.circle}>{i + 1}</div>}
+                  title={card.title}
+                  description={card.description}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
