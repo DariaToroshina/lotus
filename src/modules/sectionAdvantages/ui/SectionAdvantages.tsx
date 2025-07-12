@@ -5,7 +5,7 @@ import { cardsConfig } from "../config/config";
 
 const SectionAdvantages = () => {
   return (
-    <section className={styles.root}>
+    <section id="advantages" className={styles.root}>
       <div className={styles.content}>
         <Text tag={"h1"} className={styles.title} weight="bold">
           Преимущества Lotus перед обычным сотрудником

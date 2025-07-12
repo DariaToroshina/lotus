@@ -2,7 +2,11 @@ import Link from "next/link";
 import LogoFull from "../shared/icons/LogoFull";
 import styles from "./Header.module.css";
 
-const navigationConfig = ["Главная", "Преимущества", "Контакты"];
+const navigationConfig = [
+  { label: "Главная", href: "#home" },
+  { label: "Преимущества", href: "#advantages" },
+  { label: "Контакты", href: "#contacts" },
+];
 
 const Header = () => {
   return (
@@ -10,13 +14,11 @@ const Header = () => {
       <div className={styles.content}>
         <LogoFull />
         <nav className={styles.navigation}>
-          {navigationConfig.map((link, i) => {
-            return (
-              <Link key={i} href={""} className={styles.link}>
-                {link}
-              </Link>
-            );
-          })}
+          {navigationConfig.map((link, i) => (
+            <Link key={i} href={link.href} className={styles.link}>
+              {link.label}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>
