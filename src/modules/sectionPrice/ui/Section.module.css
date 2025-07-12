@@ -8,6 +8,7 @@
 
 .content {
   max-width: 1280px;
+  width: 100%;
 }
 
 .text {
@@ -18,8 +19,22 @@
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   gap: 32px;
   margin-top: 48px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: auto;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
 }
