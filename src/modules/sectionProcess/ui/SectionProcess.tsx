@@ -38,7 +38,7 @@ const SectionProcess = () => {
                   title={card.title}
                   description={card.description}
                 >
-                  {card.checklist && <CardList list={card.checklist} />}
+                  <CardList list={card.checklist} />
                 </Card>
               );
             })}
