@@ -10,27 +10,16 @@
   max-width: 1280px;
 }
 
-.platform {
-  font-weight: var(--Text-Thin);
-}
-
 .text {
   margin-top: 32px;
   align-items: center;
   text-align: center;
 }
 
-.chips {
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 72px;
-}
-
-.row {
+.cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
 }
