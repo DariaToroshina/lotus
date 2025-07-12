@@ -46,10 +46,12 @@ const SectionProcess = () => {
 
           <div className={styles.cardsLayout}>
             {cardsConfig.bottom.map((card, i) => {
+              const defaultCardNum = 4;
+              const cardNum = defaultCardNum + i;
               return (
                 <Card
                   key={i}
-                  num={<div className={styles.circle}>{i + 1}</div>}
+                  num={<div className={styles.circle}>{cardNum}</div>}
                   title={card.title}
                   description={card.description}
                 />
