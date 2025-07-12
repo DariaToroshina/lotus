@@ -8,36 +8,39 @@
 }
 
 .default {
-  width: 405px;
-  height: 508px;
+  /* width: 405px;
+  height: 508px; */
 }
 
 .wide {
-  width: 624px;
-  height: 248px;
+  /* width: 624px;
+  height: 248px; */
 }
 
 .header {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
   align-items: center;
-  height: 72px;
-  padding: 0px 32px;
+  padding: 32px;
   column-gap: 16px;
-  margin-top: 32px;
 }
 
-.description {
+.content {
   background-color: var(--Typo-White);
   border-radius: 30px;
-  width: calc(100%);
+  /* width: calc(100%); */
   padding: 32px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 32px;
   justify-content: flex-start;
-  margin-top: 32px;
+  font-size: 16px;
+}
+
+.text {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
 }
 
 .priceBlock {
