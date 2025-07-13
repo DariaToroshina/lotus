@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.title{
+.title {
   text-align: center;
 }
 
@@ -32,8 +32,14 @@
 }
 
 .buttonWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 12px;
-  border: 2px solid var(--Bg-Primary);
-  border-radius: 40px;
+  border: 2px solid var(--Bg-Primary, #583ae0);
+  border-radius: 100px; /* максимально круглое */
+  overflow: hidden;
+  width: fit-content;
   margin-top: 64px;
 }

@@ -21,11 +21,12 @@ export const Button: FC<ButtonProps> = ({
   onClick,
 }) => {
   if (href) {
+    // Якорные ссылки или маршруты — всё будет работать
     return (
       <Link
-        onClick={onClick}
-        className={clsx(styles.root, styles[size], className)}
         href={href}
+        className={clsx(styles.root, styles[size], className)}
+        onClick={onClick}
       >
         {children}
       </Link>

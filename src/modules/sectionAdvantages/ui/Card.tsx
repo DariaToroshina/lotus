@@ -1,5 +1,4 @@
 import styles from "./Card.module.css";
-import { DownArrowIcon } from "../icons/DownArrowIcon";
 import { Text } from "../../shared/ui/text/Text";
 import { FC, ReactNode } from "react";
 

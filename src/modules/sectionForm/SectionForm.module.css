@@ -1,30 +1,147 @@
 .root {
-    background: #fff;
-    padding: 72px 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  background: #fff;
+  padding: 72px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
-    max-width: 900px; 
+  max-width: 1280px;
+  width: 100%;
 }
 
 .title {
-    font-size: 40px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 .platform {
-    font-weight: var(--Text-Thin);
+  font-weight: var(--Text-Thin);
 }
 
 .subtitle {
-    font-size: 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 48px;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.formLabel {
+  position: relative;
+  display: block;
+  margin-top: 32px;
+}
+
+.input {
+  color: var(--Typo-Black, #25282a);
+  font-family: Geometria;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  leading-trim: both;
+  text-edge: cap;
+
+  width: 100%;
+  max-width: 584px;
+  padding: 12px 0 8px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.input:focus {
+  border-bottom-color: var(--Bg-Primary, #583ae0);
+}
+
+.input::placeholder {
+  color: var(--Typo-Placeholder, #bbb);
+  font-family: Geometria;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  leading-trim: both;
+  text-edge: cap;
+}
+
+.labelText {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  font-size: 20px;
+  color: #d6d6d6;
+  pointer-events: none;
+  transition: 0.2s ease;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  leading-trim: both;
+  text-edge: cap;
+}
+
+/* Лейбл — фокус */
+.input:focus + .labelText {
+  top: -12px;
+  font-size: 16px;
+  color: var(--Bg-Primary, #583ae0);
+}
+
+/* Лейбл — без фокуса, но есть значение */
+.input:not(:placeholder-shown):not(:focus) + .labelText {
+  top: -12px;
+  font-size: 16px;
+  color: var(--Typo-Placeholder, #bbb);
+}
+
+.formCard {
+  background-color: var(--Typo-White);
+  max-width: 1280px;
+  width: 100%;
+  border-radius: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+.formCardBody {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.formSide {
+  flex: 1;
+  padding: 48px;
+  background-color: var(--Typo-White);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: flex-start;
+}
+
+.infoSide {
+  flex: 1;
+  padding: 48px;
+  border-radius: 30px;
+  background-color: #edeaff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }

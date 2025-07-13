@@ -8,16 +8,6 @@
   width: 100%;
 }
 
-.default {
-  /* width: 405px;
-  height: 508px; */
-}
-
-.wide {
-  /* width: 624px;
-  height: 248px; */
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -28,7 +18,6 @@
 .content {
   background-color: var(--Typo-White);
   border-radius: 30px;
-  /* width: calc(100%); */
   padding: 32px;
   flex-grow: 1;
   display: flex;

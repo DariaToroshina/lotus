@@ -37,7 +37,9 @@ const SectionRobotAction = () => {
           </Text>
         </Text>
         <div className={styles.buttonWrapper}>
-          <Button className={styles.button}>Хочу робота</Button>
+          <Button className={styles.button} href="#form">
+            Хочу робота
+          </Button>
         </div>
       </div>
     </section>
