@@ -5,6 +5,7 @@ import Subtitle from "../../shared/ui/subtitle/Subtitle";
 import { cardsConfig } from "../config/config";
 import { Card } from "../../shared/ui/card/Card";
 import { Button } from "@/modules/shared/ui/button/Button";
+import { LicenseIcon } from "../icons/LicenseIcon";
 
 const SectionProcess = () => {
   return (
@@ -32,11 +33,39 @@ const SectionProcess = () => {
                       </Text>
                     )}
                   </Text>
-                  <Button>Выбрать тариф</Button>
+                  <Button href="#form">Выбрать тариф</Button>
                 </div>
               </Card>
             );
           })}
+        </div>
+        <div className={styles.cardLicensel}>
+          <div className={styles.discription}>
+            <div className={styles.titleLicensel}>
+              <LicenseIcon />
+              <Text weight="bold" className={styles.textLicense}>
+                Лицензия на платформу Lotus
+              </Text>
+            </div>
+            <Text size="small" className={styles.textLicense}>
+              Оптимален для тех, кто хочет получить максимум от RPA без
+              ограничений. Включает полный доступ к платформе, поддержку,
+              обучение и сопровождение на всех этапах
+            </Text>
+          </div>
+          <div className={styles.priceLicensel}>
+            <Text
+              tag={"h2"}
+              weight="bold"
+              size="small"
+              className={styles.textLicense}
+            >
+              <Text tag={"span"} weight="bold" className={styles.textLicense}>
+                100 000 ₽
+              </Text>{" "}
+              / год
+            </Text>
+          </div>
         </div>
       </div>
     </section>

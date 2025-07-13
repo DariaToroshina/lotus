@@ -1,6 +1,3 @@
-import { Button } from "../../shared/ui/button/Button";
-import { Text } from "../../shared/ui/text/Text";
-
 export const cardsConfig = [
   {
     title: "Создание робота до 150 шагов под ключ",

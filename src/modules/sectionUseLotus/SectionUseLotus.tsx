@@ -53,7 +53,9 @@ const SectionUseLotus = () => {
             </Text>
             Заполните форму и мы расскажем об этом
           </Text>
-          <Button className={styles.button}>Заполнить форму</Button>
+          <Button className={styles.button} href="#form">
+            Заполнить форму
+          </Button>
         </div>
       </div>
     </section>
