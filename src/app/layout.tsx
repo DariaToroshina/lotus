@@ -2,7 +2,7 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 
-export const geometria = localFont({
+const geometria = localFont({
   src: [
     {
       path: "./fonts/geometria/Geometria-Light.ttf",
