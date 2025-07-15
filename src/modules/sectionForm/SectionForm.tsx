@@ -22,6 +22,7 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
+                    name="email"
                     placeholder=" "
                     required
                     className={styles.input}
@@ -31,6 +32,7 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
+                    name="name"
                     placeholder=" "
                     required
                     className={styles.input}
@@ -40,6 +42,7 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
+                    name="phone"
                     placeholder=" "
                     required
                     className={styles.input}
@@ -49,6 +52,7 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
+                    name="company"
                     placeholder=" "
                     required
                     className={styles.input}
