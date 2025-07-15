@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 const navigationConfig = [
   { label: "Главная", href: "#home" },
   { label: "Преимущества", href: "#advantages" },
-  { label: "Контакты", href: "#contacts" },
+  { label: "Контакты", href: "#form" },
 ];
 
 const Header = () => {
