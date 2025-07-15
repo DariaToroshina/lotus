@@ -11,7 +11,11 @@ const SectionForm = () => {
         <Text tag={"h1"} className={styles.title} weight="bold">
           Начните автоматизацию уже сегодня
         </Text>
-        <form className={styles.formCard}>
+        <form
+          action="https://formsubmit.co/designer.akme@gmail.com"
+          method="POST"
+          className={styles.formCard}
+        >
           <div className={styles.formCardBody}>
             <div className={styles.formSide}>
               <div>
