@@ -10,7 +10,7 @@ const navigationConfig = [
 
 const Footer = () => {
   return (
-    <header className={styles.root}>
+    <footer className={styles.root}>
       <div className={styles.content}>
         <LogoFull />
         <nav className={styles.navigation}>
@@ -21,7 +21,7 @@ const Footer = () => {
           ))}
         </nav>
       </div>
-    </header>
+    </footer>
   );
 };
 

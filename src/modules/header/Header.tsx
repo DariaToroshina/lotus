@@ -8,6 +8,7 @@ import { useState } from "react";
 const navigationConfig = [
   { label: "Главная", href: "#home" },
   { label: "Преимущества", href: "#advantages" },
+
   { label: "Контакты", href: "#form" },
 ];
 

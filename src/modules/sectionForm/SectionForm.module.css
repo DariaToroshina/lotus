@@ -145,3 +145,46 @@
   align-items: center;
   gap: 20px;
 }
+
+@media (max-width: 900px) {
+  .root {
+    padding: 50px 0px;
+  }
+
+  .content {
+    padding: 0 32px;
+  }
+
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .formCardBody {
+    flex-direction: column;
+  }
+
+  .infoSide {
+    display: none;
+  }
+
+  .formSide {
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  .labelText {
+    font-size: 16px;
+  }
+
+  .formCard {
+    border-radius: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+  .formLabel:first-of-type {
+    margin-top: 0;
+  }
+}

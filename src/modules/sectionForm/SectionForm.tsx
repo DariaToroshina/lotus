@@ -11,18 +11,13 @@ const SectionForm = () => {
         <Text tag={"h1"} className={styles.title} weight="bold">
           Начните автоматизацию уже сегодня
         </Text>
-        <form
-          action="https://formsubmit.co/designer.akme@gmail.com"
-          method="POST"
-          className={styles.formCard}
-        >
+        <form className={styles.formCard}>
           <div className={styles.formCardBody}>
             <div className={styles.formSide}>
               <div>
                 <label className={styles.formLabel}>
                   <input
                     type="text"
-                    name="email"
                     placeholder=" "
                     required
                     className={styles.input}
@@ -32,7 +27,6 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
-                    name="name"
                     placeholder=" "
                     required
                     className={styles.input}
@@ -42,7 +36,6 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
-                    name="phone"
                     placeholder=" "
                     required
                     className={styles.input}
@@ -52,7 +45,6 @@ const SectionForm = () => {
                 <label className={styles.formLabel}>
                   <input
                     type="text"
-                    name="company"
                     placeholder=" "
                     required
                     className={styles.input}

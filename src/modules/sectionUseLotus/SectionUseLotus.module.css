@@ -38,3 +38,20 @@
   justify-content: center;
   margin-bottom: 72px;
 }
+
+@media (max-width: 900px) {
+  .root {
+    padding: 50px 30px;
+  }
+
+  .text {
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  .chips {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    gap: 8px;
+  }
+}
