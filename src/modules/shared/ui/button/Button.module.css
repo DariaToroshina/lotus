@@ -24,7 +24,7 @@
   padding: 12px 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .default {
     font-size: 15px;
     padding: 10px 20px;
