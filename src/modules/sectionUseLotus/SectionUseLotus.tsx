@@ -47,7 +47,7 @@ const SectionUseLotus = () => {
       <div className={styles.content}>
         <div className={styles.text}>
           <Text tag={"p"} weight="thin">
-            Мы полагаем, что таких сфер
+            Мы полагаем, что таких сфер{" "}
             <Text tag={"span"} weight="bold">
               не существует.{" "}
             </Text>

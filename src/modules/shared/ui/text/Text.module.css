@@ -3,11 +3,11 @@
   line-height: 150%;
 }
 
-.default{
+.default {
   font-size: 24px;
 }
 
-.small{
+.small {
   font-size: 16px;
 }
 
@@ -21,4 +21,17 @@
 
 .thin {
   font-weight: var(--Text-Thin);
+}
+
+@media (max-width: 900px) {
+  .big {
+    font-size: 25px;
+  }
+  .default {
+    font-size: 14px;
+  }
+
+  .small {
+    font-size: 10px;
+  }
 }

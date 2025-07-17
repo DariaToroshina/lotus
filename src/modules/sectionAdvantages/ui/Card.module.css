@@ -16,3 +16,20 @@
 .text {
   color: var(--Typo-White);
 }
+
+@media (max-width: 768px) {
+  .root {
+    padding: 20px;
+    gap: 12px;
+    border-radius: 24px;
+  }
+
+  .wrapper {
+    gap: 8px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -54,3 +54,25 @@
   border: 1px solid black;
   flex-shrink: 0;
 }
+
+@media (max-width: 900px) {
+  .root {
+    padding: 50px 0px;
+  }
+
+  .wrapper {
+    padding: 0px 32px;
+  }
+
+  .cardsLayout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 30px;
+  }
+
+  .circle {
+    width: 28px;
+    height: 28px;
+    font-size: 10px;
+  }
+}

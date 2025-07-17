@@ -4,3 +4,11 @@
   border-radius: 12px;
   text-align: center;
 }
+
+@media (max-width: 900px) {
+  .root {
+    padding: 6px 12px;
+    font-size: 10px;
+    text-align: center;
+  }
+}

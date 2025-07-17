@@ -88,3 +88,29 @@
   color: var(--Text-Secondary);
   margin-left: 4px;
 }
+
+@media (max-width: 900px) {
+  .header {
+    padding: 20px;
+    column-gap: 8px;
+  }
+
+  .content {
+    padding: 20px;
+    font-size: 10px;
+    gap: 16px;
+  }
+
+  .text {
+    font-size: 10px;
+    min-height: auto;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .note {
+    font-size: 10px;
+  }
+}
