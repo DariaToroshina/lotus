@@ -1,6 +1,13 @@
 import "./globals.css";
-
 import localFont from "next/font/local";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LotusRPA",
+  icons: {
+    icon: "/favicon.png",
+  },
+};
 
 const geometria = localFont({
   src: [
@@ -36,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geometria.variable}`}>{children}</body>
+      <body className={geometria.variable}>{children}</body>
     </html>
   );
 }
