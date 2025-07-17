@@ -38,7 +38,6 @@
   justify-content: center;
   margin-bottom: 72px;
 }
-
 @media (max-width: 900px) {
   .root {
     padding: 50px 30px;
