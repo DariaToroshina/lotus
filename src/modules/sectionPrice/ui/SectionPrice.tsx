@@ -12,14 +12,6 @@ const SectionProcess = () => {
     <section id="price" className={styles.root}>
       <div className={styles.content}>
         <Subtitle>Тарифы и стоимость внедрения</Subtitle>
-        <div className={styles.text}>
-          <Text tag={"p"} weight="thin">
-            Мы уверены, что цифровые роботы должны быть доступными. Если Вы
-            найдете более выгодное решение — свяжитесь с нами, и мы постараемся
-            предложить лучшие условия
-          </Text>
-        </div>
-
         <div className={styles.cards}>
           {cardsConfig.map((card, i) => {
             return (
@@ -66,6 +58,13 @@ const SectionProcess = () => {
               / год
             </Text>
           </div>
+        </div>
+        <div className={styles.text}>
+          <Text tag={"p"} weight="thin">
+            Мы уверены, что цифровые роботы должны быть доступными. Если Вы
+            найдете более выгодное решение — свяжитесь с нами, и мы постараемся
+            предложить лучшие условия
+          </Text>
         </div>
       </div>
     </section>

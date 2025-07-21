@@ -14,7 +14,7 @@ const SectionProcess = () => {
         <div className={styles.content}>
           <div className={styles.text}>
             <Text tag={"p"} weight="thin">
-              Мы убеждены, что люди лучше всего умеют
+              Мы убеждены, что люди должны
               <Text tag={"span"} weight="bold">
                 {" "}
                 думать
