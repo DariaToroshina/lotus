@@ -8,7 +8,7 @@ import { CardList } from "./CardList";
 
 const SectionProcess = () => {
   return (
-    <section className={styles.root}>
+    <section id="process" className={styles.root}>
       <div className={styles.wrapper}>
         <Subtitle>Как это работает?</Subtitle>
         <div className={styles.content}>
